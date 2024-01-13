@@ -1,8 +1,8 @@
 import { test, expect } from "@playwright/test";
-import { LogInPage } from "../page-object/loginPage";
-import { SignOut} from "../page-object/SignOut";
-import { TestPage } from "../page-object/TestPage";
-import { PersonalInfoPage } from "../page-object/PersonalInfoPage";
+import { LogInPage } from "../../page-object/loginPage";
+import { SignOut} from "../../page-object/SignOut";
+import { TestPage } from "../../page-object/TestPage";
+import { PersonalInfoPage } from "../../page-object/PersonalInfoPage";
 
 
 test("should check sign out from dropdown menu", async({page}) => {

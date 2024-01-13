@@ -14,7 +14,14 @@ export class TestPage {
     readonly getTestRoleTab: Locator
     readonly getMenuBtn: Locator
     readonly getSubscription: Locator
-
+    readonly getResetAccountBtnOnTestPage: Locator
+    readonly getAccount: Locator
+    readonly getWalletPaymentMethod: Locator
+    readonly getYesBtnWalletPayment: Locator
+    readonly getAddPromocodeBtn: Locator
+    readonly getPromocodeForm: Locator
+    readonly getApplyBtn: Locator
+    
   
     constructor(page: Page) {
       this.page = page;
@@ -30,6 +37,14 @@ export class TestPage {
       this.getTestRoleTab = page.locator("//DIV[@role='tab']")
       this.getMenuBtn = page.locator("//IMG[@id='button-nav']")
       this.getSubscription = page.locator("(//P[@_ngcontent-serverapp-c343=''][text()='Futures $ 50k Account'])[1]")
+      this.getResetAccountBtnOnTestPage = page.locator("(//button[@class='primary-btn reset-account resetAccountWithoutBackground ng-star-inserted'])[1]")
+      this.getAccount = page.locator("(//*[@class='item table box'])[4]")
+      this.getWalletPaymentMethod = page.locator("(//DIV[@_ngcontent-serverapp-c199=''])[5]")
+      this.getYesBtnWalletPayment = page.locator("//BUTTON[@_ngcontent-serverapp-c198=''][text()='YES']")
+      this.getAddPromocodeBtn = page.locator("//P[@_ngcontent-serverapp-c192=''][text()='Add']")
+      this.getPromocodeForm = page.locator("//INPUT[@id='promocode-form']")
+      this.getApplyBtn = page.locator("//BUTTON[@id='promocode-btn']")
+      
     }
   
   }
